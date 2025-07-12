@@ -1,0 +1,23 @@
+{
+    "name": "eslint-plugin-esthetic-imports",
+    "module": "src/index.ts",
+    "version": "0.0.1",
+    "type": "module",
+    "private": false,
+    "license": "MIT",
+    "devDependencies": {
+        "@types/bun": "latest",
+        "@types/eslint": "^9.6.1",
+        "@typescript-eslint/rule-tester": "^8.36.0",
+        "eslint": "^9.31.0",
+        "eslint-doc-generator": "^2.2.2",
+        "tsup": "^8.5.0"
+    },
+    "peerDependencies": {
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "@typescript-eslint/types": "^8.36.0",
+        "@typescript-eslint/utils": "^8.36.0"
+    }
+}
