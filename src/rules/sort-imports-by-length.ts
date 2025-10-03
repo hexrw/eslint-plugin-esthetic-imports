@@ -1,5 +1,5 @@
 import { TSESTree } from "@typescript-eslint/types"
-export { ESLintUtils } from "@typescript-eslint/utils"
+import { ESLintUtils } from "@typescript-eslint/utils"
 
 type Options = [{ order?: "ASC" | "DESC" }]
 

@@ -1,0 +1,28 @@
+# Source files
+src/
+tests/
+*.spec.ts
+*.test.ts
+
+# Config files
+tsconfig.json
+vitest.config.ts
+tsup.config.ts
+.github/
+.gitignore
+
+# Build artifacts
+*.tsbuildinfo
+.cache/
+
+# Bun
+bun.lock
+
+# Development
+node_modules/
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
