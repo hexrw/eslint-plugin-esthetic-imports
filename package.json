@@ -1,20 +1,64 @@
 {
     "name": "eslint-plugin-esthetic-imports",
-    "module": "src/index.ts",
-    "version": "0.0.1",
+    "version": "0.1.0",
+    "description": "ESLint plugin for sorting imports by line length for better aesthetics",
     "type": "module",
     "private": false,
     "license": "MIT",
+    "author": "Petr Kolonicz <github.com/hexrw>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hexrw/eslint-plugin-esthetic-imports.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hexrw/eslint-plugin-esthetic-imports/issues"
+    },
+    "homepage": "https://github.com/hexrw/eslint-plugin-esthetic-imports#readme",
+    "keywords": [
+        "eslint",
+        "eslint-plugin",
+        "imports",
+        "sort",
+        "organize",
+        "esthetic",
+        "aesthetic",
+        "formatting"
+    ],
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:ui": "vitest --ui",
+        "prepublishOnly": "bun run build && bun run test",
+        "prepare": "bun run build"
+    },
     "devDependencies": {
         "@types/bun": "latest",
         "@types/eslint": "^9.6.1",
         "@typescript-eslint/rule-tester": "^8.36.0",
+        "@vitest/ui": "^3.2.4",
         "eslint": "^9.31.0",
         "eslint-doc-generator": "^2.2.2",
-        "tsup": "^8.5.0"
+        "tsup": "^8.5.0",
+        "vitest": "^3.2.4"
     },
     "peerDependencies": {
-        "typescript": "^5.8.3"
+        "eslint": ">=9.0.0",
+        "typescript": ">=5.0.0"
     },
     "dependencies": {
         "@typescript-eslint/types": "^8.36.0",
